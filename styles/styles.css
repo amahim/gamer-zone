@@ -185,7 +185,59 @@ nav{
     font-weight: 600;
     background: linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%,rgb(255, 66, 165) 87.942%);
 }
+/*online*/
+.online{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.online-top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    gap: 16px;
+}
+.online-top h3{
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(11, 2, 35);
+}
+.funnyvids{
+    background-image: linear-gradient(180.00deg, rgb(249, 72, 178),rgb(135, 88, 241));
+    color: transparent;
+    background-clip: text;
+}
+.online-top p{
+    color: rgb(83, 76, 100);
+    font-size: 18px;
+    font-weight: 400;
+}
+.online-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.online-grid img{
+    width: 95%;
+    margin-left: 6px;
+}
 
+.grid-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+.grid-img p{
+    color: rgb(83, 76, 100);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 6px;
+}
 
 
 /*Responsive*/
@@ -220,7 +272,8 @@ nav{
         font-size: 85px;
     }
     .banner-left ul li{
-        width: 120%;
+        width: 100%;
+        font-size: 18px;
     }
     .signin{
         padding: 20px 30px;
@@ -268,4 +321,31 @@ nav{
         font-size: 21px;
     }
 
+    /* online */
+    .online-top h3{
+        font-size: 22px;
+    }
+    .online-top p{
+        font-size: 15px;
+    }
+    .online-grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .online-grid img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .grid-img{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    .grid-img p{
+        font-size: 14px;
+        margin-left: 0px;
+    }
+    
 }
