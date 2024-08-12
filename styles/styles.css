@@ -48,10 +48,82 @@ nav{
     background: rgba(11, 2, 35, 0.1);
     padding: 10px 15px;
 }
-
+/*banner*/
+.banner{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-left h3{
+    color: rgb(11, 2, 35);
+    font-size: 48px;
+    font-weight: 600;
+}
+.banner-left h1{
+    background-image: linear-gradient(180.00deg, rgb(249, 72, 178),rgb(135, 88, 241));
+    font-size: 95px;
+    font-weight: 800;
+    color: transparent;
+    background-clip: text;
+}
+.banner-left ul li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: rgb(83, 76, 100);
+    font-size: 20px;
+    font-weight: 500;
+}
+.banner-left ul{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.signin{
+    width: 156px;
+    height: 65px;
+    padding: 21px 40px 21px 40px;
+    border-radius: 48px;
+    border: none;
+    background: linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%,rgb(255, 66, 165) 87.942%);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+}
+.banner-btn{
+    margin-top: 50px;
+    display: flex;
+    gap: 25px;
+}
+.gorogue{
+    width: 185px;
+    height: 65px;
+    padding: 21px 40px 21px 40px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 48px;
+    border: none;
+    background: rgb(78, 197, 247);
+}
+.banner-right{
+    width: 50%;
+}
+.banner-right img{
+    height: 100%;
+    width: 100%;
+}
 /*Responsive*/
 @media screen and (max-width: 576px){
-
+    /*navbar*/
     nav{
         flex-direction: column;
         justify-content: center;
@@ -62,5 +134,35 @@ nav{
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+
+    /*banner*/
+    .banner{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .banner-left{
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    .banner-left h3{
+        font-size: 40px;
+    }
+    .banner-left h1{
+        font-size: 85px;
+    }
+    .banner-left ul li{
+        width: 120%;
+    }
+    .signin{
+        font-size: 17px;
+    }
+    .gorogue{
+        font-size: 17px;
+    }
+    .banner-right{
+        margin-top: 20px;
+        width: 100%;
     }
 }
